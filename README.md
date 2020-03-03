@@ -9,6 +9,7 @@ A simple RESTful web service which users are given privilege to extract DICOM im
 To install the dependencies, build the project and run, follow the below steps.
 
 Step 01 - $mvn clean install
+
 Step 02 - $mvn spring-boot:run
 
 ## End point
@@ -20,3 +21,7 @@ ex :
   http://localhost:8080/extract?attr_list=AcquisitionDate,TransferSyntaxUID
 
 PS : Make sure to send the right attribute name with no space between words and camel case.
+
+## Special
+
+For demostration purposes DICOM image is taken from the /dicom_images directory. In case if file not found error occurs, update the file path in MetadaExtrationService.java file.

@@ -14,7 +14,7 @@ import java.util.Map;
 public class MetaDataExtractionService
 {
     private AttributeList attrList = new AttributeList();
-    private String dicomFile = "/Users/randika/Documents/gsoc2020/DICOM/dicommetadataetractor/dicom_images/ddl_01.dcm";
+    private String dicomFile = "dicom_images/ddl_01.dcm";
 
     public Map extractMetaData(List<String> attr_list) throws IOException, DicomException {
         Map result=new HashMap();
